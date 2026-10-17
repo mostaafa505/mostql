@@ -8,6 +8,7 @@ from urllib.parse import urljoin
 
 import requests
 from bs4 import BeautifulSoup
+from curl_cffi import requests as cffi_requests
 
 URL = "https://mostaql.com/projects?category=development&sort=latest"
 BASE = "https://mostaql.com"
