@@ -111,7 +111,12 @@ def parse_projects(html):
 
 
 def fetch_projects():
-    r = requests.get(URL, headers=HEADERS, timeout=30)
+    r = cffi_requests.get(
+        URL,
+        impersonate="chrome",
+        headers={"Accept-Language": "ar,en-US;q=0.9,en;q=0.8"},
+        timeout=30,
+    )
     print("Mostaql HTTP status:", r.status_code)
     r.raise_for_status()
 
