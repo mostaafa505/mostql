@@ -95,7 +95,7 @@
   "1294637",
   "1294639"
  ],
- "fails": 5,
- "alerted": false,
+ "fails": 6,
+ "alerted": true,
  "init": true
 }
